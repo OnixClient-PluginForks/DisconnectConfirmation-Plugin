@@ -1,0 +1,166 @@
+############################
+# OS-specific
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Visual Studio
+############################
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# NuGet & Packages
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Visual Studio cache and generated files
+*.cache
+*.dbmdl
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.pdb
+*.ipch/
+*.aps
+*.ncb
+*.opendb
+*.cachefile
+*.rptproj.bak
+Generated_Code/
+
+# Build artifacts & logs
+*.psess
+*.vsp
+*.vspx
+*[Bb]uild[Ll]og.*
+[Test[Rr]esult*/]*
+*.VisualState.xml
+TestResult.xml
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Business Intelligence & GhostDoc
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+*.GhostDoc.xml
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+
+# Temporary and backup files
+*~
+*.tmp
+*.tmp_proj
+*.bak
+
+# Project system, migrations, local history, Azure, tools etc.
+UpgradeLog*.*
+_MigrationBackup/
+_LocalHistory/
+.VSHistory/
+aws-sam/
+.asalocalrun/
+
+############################
+# JetBrains (IntelliJ, Rider, PyCharm, etc.)
+############################
+.idea/
+*.iml
+*.iws
+out/
+
+# Sonarlint plugin
+.sonarlint/
+
+# Datasource local storage
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle
+.idea/gradle.xml
+.idea/libraries/
+.idea/modules.xml
+
+# JetBrains caches
+.idea/caches/
+.idea/index/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/vcs.xml
+.idea/assetWizardSettings.xml
+
+# JetBrains other
+.idea/httpRequests/
+.idea/shelf/
+
+############################
+# Python
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+env/
+venv/
+
+############################
+# Node.js
+############################
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+############################
+# General IDEs
+############################
+.vscode/
+.idea/
+*.swp
+
+############################
+# Build Output
+############################
+dist/
+build/
+out/
+release/
+target/
+
+############################
+# Logs
+############################
+*.log
