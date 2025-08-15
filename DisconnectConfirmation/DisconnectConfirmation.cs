@@ -17,7 +17,6 @@ namespace DisconnectConfirmation {
         private long lastInputTime;
 
 
-        // Input debouncing
         private long lastGlobalInputTime;
         private const long INPUT_DEBOUNCE_TICKS = TimeSpan.TicksPerMillisecond * 5;
 
@@ -52,23 +51,18 @@ namespace DisconnectConfirmation {
         }
 
         protected override void OnLoaded() {
-            ////Console.WriteLine($"Plugin {CurrentPluginManifest.Name} loaded!");
-            if (Onix.Gui.RootUiElement?.Children != null) {
-                foreach (GameUIElement gameUiElement in Onix.Gui.RootUiElement.Children) {
-                    ProcessElement(gameUiElement, 0);
-                }
-            }
-            Clipboard.SetText(str);
-            ////Console.WriteLine("Copied ui elements to clipboard at time: " + DateTime.Now);
+            //Console.WriteLine($"Plugin {CurrentPluginManifest.Name} loaded!");
+            //if (Onix.Gui.RootUiElement?.Children != null) {
+            //    foreach (GameUIElement gameUiElement in Onix.Gui.RootUiElement.Children) {
+            //        ProcessElement(gameUiElement, 0);
+            //    }
+            //}
+            //Clipboard.SetText(str);
+            //Console.WriteLine("Copied ui elements to clipboard at time: " + DateTime.Now);
             Config = new DisconnectConfirmationConfig(PluginDisplayModule);
 
             Onix.Events.Input.Input += InputOnInput;
             Onix.Events.Rendering.RenderScreenGame += RenderingOnRenderScreenGame;
-            Onix.Events.Rendering.ShouldHideScreen += RenderingOnShouldHideScreen;
-        }
-
-        private bool RenderingOnShouldHideScreen(string screenName) {
-            return false;
         }
 
         private void RenderingOnRenderScreenGame(RendererGame gfx, float delta, string screenName, bool isHudHidden,
