@@ -59,7 +59,7 @@ namespace DisconnectConfirmation {
             //}
             //Clipboard.SetText(str);
             //Console.WriteLine("Copied ui elements to clipboard at time: " + DateTime.Now);
-            Config = new DisconnectConfirmationConfig(PluginDisplayModule);
+            Config = new DisconnectConfirmationConfig(PluginDisplayModule, true);
 
             Onix.Events.Input.Input += InputOnInput;
             Onix.Events.Rendering.RenderScreenGame += RenderingOnRenderScreenGame;
