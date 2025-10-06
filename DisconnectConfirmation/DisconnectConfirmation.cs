@@ -51,7 +51,8 @@ namespace DisconnectConfirmation {
         }
 
         protected override void OnLoaded() {
-            //Console.WriteLine($"Plugin {CurrentPluginManifest.Name} loaded!");
+            //Onix.Client.NotifyTray("Copied");
+            ////Console.WriteLine($"Plugin {CurrentPluginManifest.Name} loaded!");
             //if (Onix.Gui.RootUiElement?.Children != null) {
             //    foreach (GameUIElement gameUiElement in Onix.Gui.RootUiElement.Children) {
             //        ProcessElement(gameUiElement, 0);
